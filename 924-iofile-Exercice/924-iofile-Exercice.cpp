@@ -5,43 +5,43 @@
 #include <iostream>
 #include <string>
 
-void LoadScore(const std::string file_name, int& score)
+void LoadScore(const std::string& file_name, int& score)
 {
 	// TODO : Lire le score dans le fichier
 	std::ifstream file(file_name);			
 	
-	if (file.is_open()) {
+	if (file.is_open()) {					// Si le fichier est ouvert
 		std::string score_string;
 
-		file >> score_string;				// récupération en string
+		file >> score_string;				// Recuperation en string
 		score = std::stoi(score_string);	// Passage en entier
-		file.close();						// Fermeture du fichier}
+		file.close();						// Fermeture du fichier
 	}
 }
 
-void SaveScore(const std::string file_name, int score)
+void SaveScore(const std::string& file_name, int score)
 {
 	// TODO : Ecrire le score dans le fichier
 	std::ofstream file(file_name);
 
-	if(file.is_open())
+	if(file.is_open())	// Si le fichier est ouvert
 	{
-		file << score;
-		file.close();
+		file << score;	// Ecriture du score
+		file.close();	// Fermeture du fichier
 	}
 }
 
 int main()
 {
 
-	const std::string file_name = ".score";
+	const std::string file_name = ".scores";
 
 	srand(time(NULL));
 
-	int score = 0;
+	int score_main = 0;
 	bool exit = true;
 
-	LoadScore(file_name, score);
+	LoadScore(file_name, score_main);
 
 	do {
 
@@ -49,8 +49,8 @@ int main()
 		system("pause");
 
 		// On compte et on affiche
-		score++;
-		std::cout << score << '\n';
+		score_main++;
+		std::cout << score_main << '\n';
 
 		// 1 chance sur 10 de quitter
 		exit = (rand() % 10 == 0 ? false : true);
@@ -59,7 +59,7 @@ int main()
 
 	std::cout << "EXIT the clicker" << '\n';
 
-	SaveScore(file_name, score);
+	SaveScore(file_name, score_main);
 
 }
 
