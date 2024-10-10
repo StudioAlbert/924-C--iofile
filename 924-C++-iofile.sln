@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "924-iofile", "924-iofile\92
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "924-iofile-Exercice", "924-iofile-Exercice\924-iofile-Exercice.vcxproj", "{F619432B-15D9-4D44-8907-9AF550B57085}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "924-iofile-exercice_multiplayer", "924-iofile-exercice_multiplayer\924-iofile-exercice_multiplayer.vcxproj", "{0FB2733B-3076-4E87-ACF4-8D45F86E7A24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{F619432B-15D9-4D44-8907-9AF550B57085}.Release|x64.Build.0 = Release|x64
 		{F619432B-15D9-4D44-8907-9AF550B57085}.Release|x86.ActiveCfg = Release|Win32
 		{F619432B-15D9-4D44-8907-9AF550B57085}.Release|x86.Build.0 = Release|Win32
+		{0FB2733B-3076-4E87-ACF4-8D45F86E7A24}.Debug|x64.ActiveCfg = Debug|x64
+		{0FB2733B-3076-4E87-ACF4-8D45F86E7A24}.Debug|x64.Build.0 = Debug|x64
+		{0FB2733B-3076-4E87-ACF4-8D45F86E7A24}.Debug|x86.ActiveCfg = Debug|Win32
+		{0FB2733B-3076-4E87-ACF4-8D45F86E7A24}.Debug|x86.Build.0 = Debug|Win32
+		{0FB2733B-3076-4E87-ACF4-8D45F86E7A24}.Release|x64.ActiveCfg = Release|x64
+		{0FB2733B-3076-4E87-ACF4-8D45F86E7A24}.Release|x64.Build.0 = Release|x64
+		{0FB2733B-3076-4E87-ACF4-8D45F86E7A24}.Release|x86.ActiveCfg = Release|Win32
+		{0FB2733B-3076-4E87-ACF4-8D45F86E7A24}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
